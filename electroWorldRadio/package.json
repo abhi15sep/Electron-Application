@@ -1,0 +1,23 @@
+{
+  "name": "electroradio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack-mac": "electron-packager . 'electroWorldRadio' --platform=darwin --arch=x64 --icon=imgs/radio.icns --out=release --overwrite --asar",
+    "pack-win32": "electron-packager . 'electroWorldRadio' --platform=win32 --arch=ia32 --icon=imgs/radio.ico --out=release --overwrite --asar",
+    "pack-win64": "electron-packager . 'electroWorldRadio' --platform=win32 --arch=x64 --icon=imgs/radio.ico --out=release --overwrite --asar",
+    "pack-linux": "electron-packager . 'electroWorldRadio' --platform=linux --arch=ia32 --icon=imgs/radio.png --out=release --overwrite --asar"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.2.1",
+    "jquery": "^3.4.1",
+    "lautfm": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.2.1"
+  }
+}

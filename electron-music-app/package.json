@@ -1,0 +1,22 @@
+{
+  "name": "musicapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack-mac": "electron-packager . 'Electro Player' --platform=darwin --arch=x64 --icon=icons/icon.icns --out=release --asar --overwrite",
+    "pack-win": "electron-packager . 'Electro Player' --platform=win32 --arch=ia32 --icon=icons/icon.ico --out=release --asar --overwrite",
+    "pack-linux": "electron-packager . 'Electro Player' --platform=linux --arch=x64 --icon=icons/icon.png --out=release --asar --overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.4",
+    "jquery": "^3.4.1",
+    "music-metadata": "^4.2.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.0.1"
+  }
+}

@@ -1,0 +1,39 @@
+.input-field{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%; 
+    height: 80%;
+    color: #000;
+}
+
+.heading{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    background: #000;
+    opacity: 0.5;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.init-img{
+    width: 100%;
+    height: 350px;
+}
+
+.radios{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.65);
+    background-blend-mode: difference;
+}
+
+.radio-list{
+    background-image: url('../imgs/cassete.png');
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}

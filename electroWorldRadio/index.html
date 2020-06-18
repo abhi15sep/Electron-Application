@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Radio Online</title>
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    
+    <div class="window" style="background-color: rgba(0,0,0,0.7);">
+        <div style="display: flex; justify-content: center;">
+            <label style="margin-top: 15px; margin-right: 10px; color: aliceblue;">Introduce sólo una letra de la A, a la, Z</label> 
+            <input class="input-field" val="a" onchange="setLetter(this)" type="text" placeholder="Debes salirte de la casilla" maxlength="1">
+        </div>
+        
+        <div class="window-content">
+                <ul class="list-group" id="station-list">
+
+                    <div style="position:relative; display: flex; justify-content: center; overflow: hidden;">
+                        <img class="init-img" src="imgs/main-image.png" alt="">
+                        <p class="heading"> Introduce una letra de la a-z para cargar las emisoras que quieras escuchar </p>
+
+                    </div>
+
+                    <!-- single radio station starts here -->
+                        <!-- trasladado a render.js -->
+                    <!-- single radio station ends here -->
+
+                </ul>
+                
+        </div>
+
+        <footer class="toolbar toolbar-footer" style="height: 40px">
+            <audio src="" controls style="height: 40px; width: 100%"></audio>
+        </footer>
+    </div>
+
+    <script src="render.js"></script>
+</body>
+</html>
+
+<!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+
+<!-- Photo by Markus Spiske on Unsplash -->
+<!-- Photo by Namroud Gorguis on Unsplash -->
